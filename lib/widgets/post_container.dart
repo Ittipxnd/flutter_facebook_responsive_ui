@@ -9,8 +9,8 @@ class PostContainer extends StatelessWidget {
   final Post post;
 
   const PostContainer({
-    Key key,
-    @required this.post,
+    Key? key,
+    required this.post,
   }) : super(key: key);
 
   @override
@@ -38,13 +38,13 @@ class PostContainer extends StatelessWidget {
                   _PostHeader(post: post),
                   const SizedBox(height: 4.0),
                   Text(post.caption),
-                  post.imageUrl != null
+                  post.imageUrl != ''
                       ? const SizedBox.shrink()
                       : const SizedBox(height: 6.0),
                 ],
               ),
             ),
-            post.imageUrl != null
+            post.imageUrl != ''
                 ? Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8.0),
                     child: CachedNetworkImage(imageUrl: post.imageUrl),
@@ -65,8 +65,8 @@ class _PostHeader extends StatelessWidget {
   final Post post;
 
   const _PostHeader({
-    Key key,
-    @required this.post,
+    Key? key,
+    required this.post,
   }) : super(key: key);
 
   @override
@@ -117,8 +117,8 @@ class _PostStats extends StatelessWidget {
   final Post post;
 
   const _PostStats({
-    Key key,
-    @required this.post,
+    Key? key,
+    required this.post,
   }) : super(key: key);
 
   @override
@@ -206,10 +206,10 @@ class _PostButton extends StatelessWidget {
   final Function onTap;
 
   const _PostButton({
-    Key key,
-    @required this.icon,
-    @required this.label,
-    @required this.onTap,
+    Key? key,
+    required this.icon,
+    required this.label,
+    required this.onTap,
   }) : super(key: key);
 
   @override
@@ -218,7 +218,7 @@ class _PostButton extends StatelessWidget {
       child: Material(
         color: Colors.white,
         child: InkWell(
-          onTap: onTap,
+          onTap: () {},
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 12.0),
             height: 25.0,

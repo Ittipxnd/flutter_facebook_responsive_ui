@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_facebook_responsive_ui/config/palette.dart';
 import 'package:flutter_facebook_responsive_ui/data/data.dart';
 import 'package:flutter_facebook_responsive_ui/models/models.dart';
@@ -29,6 +30,8 @@ class _HomeScreenState extends State<HomeScreen> {
           mobile:
               _HomeScreenMobile(scrollController: _trackingScrollController),
           desktop:
+              _HomeScreenDesktop(scrollController: _trackingScrollController), 
+          tablet: 
               _HomeScreenDesktop(scrollController: _trackingScrollController),
         ),
       ),
@@ -40,8 +43,8 @@ class _HomeScreenMobile extends StatelessWidget {
   final TrackingScrollController scrollController;
 
   const _HomeScreenMobile({
-    Key key,
-    @required this.scrollController,
+    Key? key,
+    required this.scrollController,
   }) : super(key: key);
 
   @override
@@ -50,7 +53,6 @@ class _HomeScreenMobile extends StatelessWidget {
       controller: scrollController,
       slivers: [
         SliverAppBar(
-          brightness: Brightness.light,
           backgroundColor: Colors.white,
           title: Text(
             'facebook',
@@ -74,7 +76,7 @@ class _HomeScreenMobile extends StatelessWidget {
               iconSize: 30.0,
               onPressed: () => print('Messenger'),
             ),
-          ],
+          ], systemOverlayStyle: SystemUiOverlayStyle.dark,
         ),
         SliverToBoxAdapter(
           child: CreatePostContainer(currentUser: currentUser),
@@ -112,8 +114,8 @@ class _HomeScreenDesktop extends StatelessWidget {
   final TrackingScrollController scrollController;
 
   const _HomeScreenDesktop({
-    Key key,
-    @required this.scrollController,
+    Key? key,
+    required this.scrollController,
   }) : super(key: key);
 
   @override

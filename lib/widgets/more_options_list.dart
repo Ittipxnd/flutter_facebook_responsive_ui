@@ -5,7 +5,7 @@ import 'package:flutter_facebook_responsive_ui/widgets/widgets.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class MoreOptionsList extends StatelessWidget {
-  final List<List> _moreOptionsList = const [
+  final List<List> _moreOptionsList = [
     [MdiIcons.shieldAccount, Colors.deepPurple, 'COVID-19 Info Center'],
     [MdiIcons.accountMultiple, Colors.cyan, 'Friends'],
     [MdiIcons.facebookMessenger, Palette.facebookBlue, 'Messenger'],
@@ -17,9 +17,9 @@ class MoreOptionsList extends StatelessWidget {
 
   final User currentUser;
 
-  const MoreOptionsList({
-    Key key,
-    @required this.currentUser,
+  MoreOptionsList({
+    Key? key,
+    required this.currentUser,
   }) : super(key: key);
 
   @override
@@ -56,10 +56,10 @@ class _Option extends StatelessWidget {
   final String label;
 
   const _Option({
-    Key key,
-    @required this.icon,
-    @required this.color,
-    @required this.label,
+    Key? key,
+    required this.icon,
+    required this.color,
+    required this.label,
   }) : super(key: key);
 
   @override
