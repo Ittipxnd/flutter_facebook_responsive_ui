@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_facebook/config/palette.dart';
 import 'package:flutter_facebook/data/data.dart';
 import 'package:flutter_facebook/models/video_model.dart';
 import 'package:flutter_facebook/widgets/video_container.dart';
+import 'package:flutter_facebook/widgets/watch_bar.dart';
 import 'package:flutter_facebook/widgets/widgets.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
@@ -140,14 +142,8 @@ class _HomeScreenDesktop extends StatelessWidget {
           child: CustomScrollView(
             controller: scrollController,
             slivers: [
-              SliverToBoxAdapter(
-                child: CreatePostContainer(currentUser: currentUser),
-              ),
-              SliverPadding(
-                padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 5.0),
-                sliver: SliverToBoxAdapter(
-                  child: Rooms(onlineUsers: onlineUsers),
-                ),
+              SliverToBoxAdapter (
+              child : WatchBar()
               ),
               SliverList(
                 delegate: SliverChildBuilderDelegate(
