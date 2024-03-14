@@ -161,6 +161,30 @@ class _HomeScreenDesktop extends StatelessWidget {
             slivers: [
               SliverToBoxAdapter(child: WatchBar()),
               SliverToBoxAdapter(
+                child: Row(
+                  children: <Widget>[
+                    CircleAvatar(
+                      child: Image.network(
+                        'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+                      ),
+                      radius: 20,
+                    ),
+                    SizedBox(width: 7.0),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text('Greg',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 17.0)),
+                        SizedBox(height: 5.0),
+                        Text('7h')
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              SliverToBoxAdapter(
                 child: YoutubePlayer(
                     controller: YoutubePlayerController(
                         initialVideoId: YoutubePlayer.convertUrlToId(
