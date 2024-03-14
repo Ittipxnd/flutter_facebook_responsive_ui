@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_facebook_responsive_ui/data/data.dart';
-import 'package:flutter_facebook_responsive_ui/screens/screens.dart';
-import 'package:flutter_facebook_responsive_ui/widgets/widgets.dart';
+import 'package:flutter_facebook/data/data.dart';
+import 'package:flutter_facebook/screens/screens.dart';
+import 'package:flutter_facebook/widgets/widgets.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class NavScreen extends StatefulWidget {

@@ -1,8 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_facebook_responsive_ui/config/palette.dart';
-import 'package:flutter_facebook_responsive_ui/models/models.dart';
-import 'package:flutter_facebook_responsive_ui/widgets/widgets.dart';
+import 'package:flutter_facebook/config/palette.dart';
+import 'package:flutter_facebook/models/models.dart';
+import 'package:flutter_facebook/widgets/widgets.dart';
 
 class Stories extends StatelessWidget {
   final User currentUser;

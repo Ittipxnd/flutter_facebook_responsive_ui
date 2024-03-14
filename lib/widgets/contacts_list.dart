@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_facebook_responsive_ui/models/models.dart';
-import 'package:flutter_facebook_responsive_ui/widgets/widgets.dart';
+import 'package:flutter_facebook/models/models.dart';
+import 'package:flutter_facebook/widgets/widgets.dart';
 
 class ContactsList extends StatelessWidget {
   final List<User> users;

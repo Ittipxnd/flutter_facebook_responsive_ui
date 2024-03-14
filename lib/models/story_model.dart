@@ -1,5 +1,4 @@
-import 'package:meta/meta.dart';
-import 'package:flutter_facebook_responsive_ui/models/models.dart';
+import 'package:flutter_facebook/models/models.dart';
 
 class Story {
   final User user;

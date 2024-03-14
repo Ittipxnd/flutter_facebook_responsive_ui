@@ -1,6 +1,6 @@
 import 'package:flutter_facebook/models/models.dart';
 
-class Post {
+class Video {
   final User user;
   final String caption;
   final String timeAgo;
@@ -9,7 +9,7 @@ class Post {
   final int comments;
   final int shares;
 
-  const Post({
+  const Video({
     required this.user,
     required this.caption,
     required this.timeAgo,
