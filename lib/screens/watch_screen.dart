@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
@@ -8,21 +10,39 @@ import 'package:flutter_facebook/widgets/video_container.dart';
 import 'package:flutter_facebook/widgets/watch_bar.dart';
 import 'package:flutter_facebook/widgets/widgets.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class WatchScreen extends StatefulWidget {
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  _WatchScreenState createState() => _WatchScreenState();
 }
 
-class _HomeScreenState extends State<WatchScreen> {
-  final TrackingScrollController _trackingScrollController =
-      TrackingScrollController();
+class _WatchScreenState extends State<WatchScreen> {
+  String videoUrl1 = 'https://www.youtube.com/watch?v=j5-yKhDd64s';
+  late YoutubePlayerController _controller1;
+
+  String videoUrl2 = 'https://www.youtube.com/watch?v=E1ZVSFfCk9g';
+  late YoutubePlayerController _controller2;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller1 = YoutubePlayerController(
+        initialVideoId: YoutubePlayer.convertUrlToId(videoUrl1)!);
+    _controller2 = YoutubePlayerController(
+        initialVideoId: YoutubePlayer.convertUrlToId(videoUrl2)!);
+  }
 
   @override
   void dispose() {
+    _controller1.dispose();
+    _controller2.dispose();
     _trackingScrollController.dispose();
     super.dispose();
   }
+
+  final TrackingScrollController _trackingScrollController =
+      TrackingScrollController();
 
   @override
   Widget build(BuildContext context) {
@@ -100,14 +120,11 @@ class _HomeScreenMobile extends StatelessWidget {
             ),
           ),
         ),
-        SliverList(
-          delegate: SliverChildBuilderDelegate(
-            (context, index) {
-              final Video video = videos[index];
-              return VideoContainer(video: video);
-            },
-            childCount: videos.length,
-          ),
+        SliverToBoxAdapter(
+          child: YoutubePlayer(
+              controller: YoutubePlayerController(
+                  initialVideoId: YoutubePlayer.convertUrlToId(
+                      'https://www.youtube.com/watch?v=j5-yKhDd64s')!)),
         ),
       ],
     );
@@ -142,17 +159,12 @@ class _HomeScreenDesktop extends StatelessWidget {
           child: CustomScrollView(
             controller: scrollController,
             slivers: [
-              SliverToBoxAdapter (
-              child : WatchBar()
-              ),
-              SliverList(
-                delegate: SliverChildBuilderDelegate(
-                  (context, index) {
-                    final Video video = videos[index];
-                    return VideoContainer(video: video);
-                  },
-                  childCount: videos.length,
-                ),
+              SliverToBoxAdapter(child: WatchBar()),
+              SliverToBoxAdapter(
+                child: YoutubePlayer(
+                    controller: YoutubePlayerController(
+                        initialVideoId: YoutubePlayer.convertUrlToId(
+                            'https://www.youtube.com/watch?v=j5-yKhDd64s')!)),
               ),
             ],
           ),
