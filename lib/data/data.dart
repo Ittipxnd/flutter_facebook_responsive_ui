@@ -343,5 +343,35 @@ final List<Video> videos = [
     likes: 1523,
     shares: 129,
     comments: 301,
-  )
+  ),
+  Video(
+    user: onlineUsers[9],
+    caption: 'A classic.',
+    timeAgo: '1d',
+    imageUrl:
+        'https://images.unsplash.com/reserve/OlxPGKgRUaX0E1hg3b3X_Dumbo.JPG?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+    likes: 1523,
+    shares: 129,
+    comments: 301,
+  ),
+  Video(
+    user: onlineUsers[9],
+    caption: 'A classic.',
+    timeAgo: '1d',
+    imageUrl:
+        'https://images.unsplash.com/reserve/OlxPGKgRUaX0E1hg3b3X_Dumbo.JPG?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+    likes: 1523,
+    shares: 129,
+    comments: 301,
+  ),
+  Video(
+    user: onlineUsers[9],
+    caption: 'A classic.',
+    timeAgo: '1d',
+    imageUrl:
+        'https://images.unsplash.com/reserve/OlxPGKgRUaX0E1hg3b3X_Dumbo.JPG?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+    likes: 1523,
+    shares: 129,
+    comments: 301,
+  ),
 ];

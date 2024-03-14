@@ -104,7 +104,7 @@ class _HomeScreenMobile extends StatelessWidget {
               final Video video = videos[index];
               return VideoContainer(video: video);
             },
-            childCount: posts.length,
+            childCount: videos.length,
           ),
         ),
       ],
@@ -155,7 +155,7 @@ class _HomeScreenDesktop extends StatelessWidget {
                     final Video video = videos[index];
                     return VideoContainer(video: video);
                   },
-                  childCount: posts.length,
+                  childCount: videos.length,
                 ),
               ),
             ],
