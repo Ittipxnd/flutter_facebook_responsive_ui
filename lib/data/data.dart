@@ -359,7 +359,7 @@ final List<Video> videos = [
     caption: 'A classic.',
     timeAgo: '1d',
     imageUrl:
-        'https://images.unsplash.com/reserve/OlxPGKgRUaX0E1hg3b3X_Dumbo.JPG?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        'https://www.youtube.com/watch?v=j5-yKhDd64s',
     likes: 1523,
     shares: 129,
     comments: 301,
@@ -369,7 +369,7 @@ final List<Video> videos = [
     caption: 'A classic.',
     timeAgo: '1d',
     imageUrl:
-        'https://images.unsplash.com/reserve/OlxPGKgRUaX0E1hg3b3X_Dumbo.JPG?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        'https://www.youtube.com/watch?v=E1ZVSFfCk9g',
     likes: 1523,
     shares: 129,
     comments: 301,

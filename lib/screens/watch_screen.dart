@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_facebook/config/palette.dart';
 import 'package:flutter_facebook/data/data.dart';
 import 'package:flutter_facebook/models/video_model.dart';
@@ -163,12 +164,7 @@ class _HomeScreenDesktop extends StatelessWidget {
               SliverToBoxAdapter(
                 child: Row(
                   children: <Widget>[
-                    CircleAvatar(
-                      child: Image.network(
-                        'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
-                      ),
-                      radius: 20,
-                    ),
+                    ProfileAvatar(imageUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'),
                     SizedBox(width: 7.0),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
