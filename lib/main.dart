@@ -3,6 +3,7 @@ import 'package:flutter_facebook/config/palette.dart';
 import 'package:flutter_facebook/screens/screens.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
 
