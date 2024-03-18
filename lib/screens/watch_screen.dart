@@ -1,4 +1,3 @@
-import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +11,6 @@ import 'package:flutter_facebook/widgets/watch_bar.dart';
 import 'package:flutter_facebook/widgets/widgets.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
-import 'package:flutter_facebook/widgets/post_container.dart';
 
 class WatchScreen extends StatefulWidget {
   @override
@@ -111,13 +109,13 @@ class _HomeScreenMobile extends StatelessWidget {
           systemOverlayStyle: SystemUiOverlayStyle.dark,
         ),
         SliverPadding(
-          padding: EdgeInsets.symmetric(horizontal: 50.0),
+          padding: EdgeInsets.symmetric(horizontal: 8.0),
           sliver: SliverToBoxAdapter(
             child: Row(
               children: <Widget>[
                 ProfileAvatar(
                   imageUrl:
-                      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+                      'https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                 ),
                 SizedBox(height: 3, width: 8.0),
                 Column(
@@ -126,14 +124,14 @@ class _HomeScreenMobile extends StatelessWidget {
                   children: <Widget>[
                     SizedBox(height: 3.0),
                     Text(
-                      'Greg',
+                      'ฟังเพลงเพราะๆ',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 17.0,
                       ),
                     ),
                     SizedBox(height: 1.0),
-                    Text('7h'),
+                    Text('9h'),
                   ],
                 ),
               ],
@@ -141,19 +139,19 @@ class _HomeScreenMobile extends StatelessWidget {
           ),
         ),
         SliverPadding(
-          padding: EdgeInsets.symmetric(horizontal: 50.0, vertical: 3),
+          padding: EdgeInsets.symmetric(horizontal: 0.0, vertical: 3),
           sliver: SliverToBoxAdapter(
             child: YoutubePlayer(
               controller: YoutubePlayerController(
                 initialVideoId: YoutubePlayer.convertUrlToId(
-                  'https://www.youtube.com/watch?v=fNnChc2w2aM&t=395s',
+                  'https://www.youtube.com/watch?v=ApXoWvfEYVU',
                 )!,
               ),
             ),
           ),
         ),
         SliverPadding(
-          padding: EdgeInsets.fromLTRB(47, 3, 47, 3),
+          padding: EdgeInsets.fromLTRB(0, 3, 0, 3),
           sliver: SliverPadding(
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             sliver: SliverToBoxAdapter(
@@ -170,13 +168,13 @@ class _HomeScreenMobile extends StatelessWidget {
                               Icon(Icons.thumb_up,
                                   size: 15.0, color: Colors.blue),
                               Text(
-                                '23',
+                                '548',
                               ),
                             ],
                           ),
                         ),
                         Text(
-                          '2 comments • 1 share',
+                          '387 comments • 124 share',
                         ),
                       ],
                     ),
@@ -187,7 +185,7 @@ class _HomeScreenMobile extends StatelessWidget {
           ),
         ),
         SliverPadding(
-          padding: EdgeInsets.fromLTRB(47, 0, 47, 0),
+          padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
           sliver: SliverPadding(
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             sliver: SliverToBoxAdapter(
@@ -200,7 +198,7 @@ class _HomeScreenMobile extends StatelessWidget {
           ),
         ),
         SliverPadding(
-          padding: EdgeInsets.fromLTRB(47, 3, 47, 50),
+          padding: EdgeInsets.fromLTRB(0, 3, 0, 50),
           sliver: SliverPadding(
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             sliver: SliverToBoxAdapter(
@@ -247,13 +245,13 @@ class _HomeScreenMobile extends StatelessWidget {
           ),
         ),
         SliverPadding(
-          padding: EdgeInsets.symmetric(horizontal: 50.0),
+          padding: EdgeInsets.symmetric(horizontal: 8.0),
           sliver: SliverToBoxAdapter(
             child: Row(
               children: <Widget>[
                 ProfileAvatar(
                   imageUrl:
-                      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+                      'https://images.unsplash.com/photo-1516873240891-4bf014598ab4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                 ),
                 SizedBox(height: 3, width: 8.0),
                 Column(
@@ -262,14 +260,14 @@ class _HomeScreenMobile extends StatelessWidget {
                   children: <Widget>[
                     SizedBox(height: 3.0),
                     Text(
-                      'Greg',
+                      'DJ JoJo',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 17.0,
                       ),
                     ),
                     SizedBox(height: 1.0),
-                    Text('7h'),
+                    Text('20h'),
                   ],
                 ),
               ],
@@ -277,19 +275,19 @@ class _HomeScreenMobile extends StatelessWidget {
           ),
         ),
         SliverPadding(
-          padding: EdgeInsets.symmetric(horizontal: 50.0, vertical: 3),
+          padding: EdgeInsets.symmetric(horizontal: 0.0, vertical: 3),
           sliver: SliverToBoxAdapter(
             child: YoutubePlayer(
               controller: YoutubePlayerController(
                 initialVideoId: YoutubePlayer.convertUrlToId(
-                  'https://www.youtube.com/watch?v=fNnChc2w2aM&t=395s',
+                  'https://www.youtube.com/watch?v=UceaB4D0jpo',
                 )!,
               ),
             ),
           ),
         ),
         SliverPadding(
-          padding: EdgeInsets.fromLTRB(47, 3, 47, 3),
+          padding: EdgeInsets.fromLTRB(0, 3, 0, 3),
           sliver: SliverPadding(
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             sliver: SliverToBoxAdapter(
@@ -306,13 +304,13 @@ class _HomeScreenMobile extends StatelessWidget {
                               Icon(Icons.thumb_up,
                                   size: 15.0, color: Colors.blue),
                               Text(
-                                '23',
+                                '2K',
                               ),
                             ],
                           ),
                         ),
                         Text(
-                          '2 comments • 1 share',
+                          '5K comments • 1K share',
                         ),
                       ],
                     ),
@@ -323,7 +321,7 @@ class _HomeScreenMobile extends StatelessWidget {
           ),
         ),
         SliverPadding(
-          padding: EdgeInsets.fromLTRB(47, 0, 47, 0),
+          padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
           sliver: SliverPadding(
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             sliver: SliverToBoxAdapter(
@@ -336,7 +334,7 @@ class _HomeScreenMobile extends StatelessWidget {
           ),
         ),
         SliverPadding(
-          padding: EdgeInsets.fromLTRB(47, 3, 47, 50),
+          padding: EdgeInsets.fromLTRB(0, 3, 0, 50),
           sliver: SliverPadding(
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             sliver: SliverToBoxAdapter(
@@ -382,13 +380,13 @@ class _HomeScreenMobile extends StatelessWidget {
             ),
           ),
         ),SliverPadding(
-          padding: EdgeInsets.symmetric(horizontal: 50.0),
+          padding: EdgeInsets.symmetric(horizontal: 8.0),
           sliver: SliverToBoxAdapter(
             child: Row(
               children: <Widget>[
                 ProfileAvatar(
                   imageUrl:
-                      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+                      'https://yt3.googleusercontent.com/ytc/AIdro_lXPtpQENlzGAhOOdwoBgbWgdZZspr_D5wmS1dR6w=s160-c-k-c0x00ffffff-no-rj',
                 ),
                 SizedBox(height: 3, width: 8.0),
                 Column(
@@ -397,14 +395,14 @@ class _HomeScreenMobile extends StatelessWidget {
                   children: <Widget>[
                     SizedBox(height: 3.0),
                     Text(
-                      'Greg',
+                      'Skooldio fanpage',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 17.0,
                       ),
                     ),
                     SizedBox(height: 1.0),
-                    Text('7h'),
+                    Text('12h'),
                   ],
                 ),
               ],
@@ -412,7 +410,7 @@ class _HomeScreenMobile extends StatelessWidget {
           ),
         ),
         SliverPadding(
-          padding: EdgeInsets.symmetric(horizontal: 50.0, vertical: 3),
+          padding: EdgeInsets.symmetric(horizontal: 0.0, vertical: 3),
           sliver: SliverToBoxAdapter(
             child: YoutubePlayer(
               controller: YoutubePlayerController(
@@ -424,7 +422,7 @@ class _HomeScreenMobile extends StatelessWidget {
           ),
         ),
         SliverPadding(
-          padding: EdgeInsets.fromLTRB(47, 3, 47, 3),
+          padding: EdgeInsets.fromLTRB(0, 3, 0, 3),
           sliver: SliverPadding(
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             sliver: SliverToBoxAdapter(
@@ -441,13 +439,13 @@ class _HomeScreenMobile extends StatelessWidget {
                               Icon(Icons.thumb_up,
                                   size: 15.0, color: Colors.blue),
                               Text(
-                                '23',
+                                '235',
                               ),
                             ],
                           ),
                         ),
                         Text(
-                          '2 comments • 1 share',
+                          '35 comments • 17 share',
                         ),
                       ],
                     ),
@@ -458,7 +456,7 @@ class _HomeScreenMobile extends StatelessWidget {
           ),
         ),
         SliverPadding(
-          padding: EdgeInsets.fromLTRB(47, 0, 47, 0),
+          padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
           sliver: SliverPadding(
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             sliver: SliverToBoxAdapter(
@@ -471,7 +469,7 @@ class _HomeScreenMobile extends StatelessWidget {
           ),
         ),
         SliverPadding(
-          padding: EdgeInsets.fromLTRB(47, 3, 47, 50),
+          padding: EdgeInsets.fromLTRB(0, 3, 0, 50),
           sliver: SliverPadding(
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             sliver: SliverToBoxAdapter(
@@ -567,17 +565,17 @@ class _HomeScreenDesktop extends StatelessWidget {
                   children: <Widget>[
                     ProfileAvatar(
                         imageUrl:
-                            'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'),
+                            'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),
                     SizedBox(width: 7.0),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        Text('Greg',
+                        Text('หนังสนุกๆ',
                             style: TextStyle(
                                 fontWeight: FontWeight.bold, fontSize: 17.0)),
                         SizedBox(height: 5.0),
-                        Text('7h')
+                        Text('13m')
                       ],
                     ),
                   ],
@@ -590,7 +588,7 @@ class _HomeScreenDesktop extends StatelessWidget {
                 child: YoutubePlayer(
                     controller: YoutubePlayerController(
                         initialVideoId: YoutubePlayer.convertUrlToId(
-                            'https://www.youtube.com/watch?v=j5-yKhDd64s')!)),
+                            'https://www.youtube.com/watch?v=46OE84FQYaw')!)),
               ),
               SliverToBoxAdapter(
                 child: Padding(padding: EdgeInsets.symmetric(vertical: 3)),
@@ -642,7 +640,7 @@ class _HomeScreenDesktop extends StatelessWidget {
                           children: <Widget>[
                             Icon(Icons.thumb_up,
                                 size: 15.0, color: Colors.blue),
-                            Text(' 23  •  2 comments  •  1 share'),
+                            Text(' 54  •  26 comments  •  14 share'),
                           ],
                         ),
                       ),
@@ -655,17 +653,17 @@ class _HomeScreenDesktop extends StatelessWidget {
                   children: <Widget>[
                     ProfileAvatar(
                         imageUrl:
-                            'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'),
+                            'https://yt3.googleusercontent.com/FOJKtaBfRKUtvURL34U1LUJ3MBqucN26F1Zbin88A0jRQQp-cpfqc9r8UH8ixfQhTh8BQQYXrQ=s160-c-k-c0x00ffffff-no-rj'),
                     SizedBox(width: 7.0),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        Text('Greg',
+                        Text('ขอบสนาม',
                             style: TextStyle(
                                 fontWeight: FontWeight.bold, fontSize: 17.0)),
                         SizedBox(height: 5.0),
-                        Text('7h')
+                        Text('4h')
                       ],
                     ),
                   ],
@@ -678,7 +676,7 @@ class _HomeScreenDesktop extends StatelessWidget {
                 child: YoutubePlayer(
                     controller: YoutubePlayerController(
                         initialVideoId: YoutubePlayer.convertUrlToId(
-                            'https://www.youtube.com/watch?v=j5-yKhDd64s')!)),
+                            'https://www.youtube.com/watch?v=nqUVgEilpKU')!)),
               ),
               SliverToBoxAdapter(
                 child: Padding(padding: EdgeInsets.symmetric(vertical: 3)),
@@ -730,7 +728,7 @@ class _HomeScreenDesktop extends StatelessWidget {
                           children: <Widget>[
                             Icon(Icons.thumb_up,
                                 size: 15.0, color: Colors.blue),
-                            Text(' 23  •  2 comments  •  1 share'),
+                            Text(' 875  •   456 comments  •  78 share'),
                           ],
                         ),
                       ),
