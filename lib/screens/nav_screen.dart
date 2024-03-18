@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_facebook/data/data.dart';
+import 'package:flutter_facebook/screens/friend_screen.dart';
+import 'package:flutter_facebook/screens/menu_screem.dart';
+import 'package:flutter_facebook/screens/noti_screen.dart';
 import 'package:flutter_facebook/screens/profile_screen.dart';
 import 'package:flutter_facebook/screens/screens.dart';
 import 'package:flutter_facebook/screens/watch_screen.dart';
@@ -16,9 +19,9 @@ class _NavScreenState extends State<NavScreen> {
     HomeScreen(),
     WatchScreen(),
     ProfileScreen(),
-    Scaffold(),
-    Scaffold(),
-    Scaffold(),
+    FriendsScreen(),
+    NotificationsScreen(),
+    MenuScreen(),
   ];
   final List<IconData> _icons = [
     Icons.home,
