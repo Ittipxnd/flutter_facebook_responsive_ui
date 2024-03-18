@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
           desktop:
               _HomeScreenDesktop(scrollController: _trackingScrollController), 
           tablet: 
-              _HomeScreenDesktop(scrollController: _trackingScrollController),
+              _HomeScreenMobile(scrollController: _trackingScrollController),
         ),
       ),
     );
