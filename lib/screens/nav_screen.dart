@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_facebook/data/data.dart';
+import 'package:flutter_facebook/screens/profile_screen.dart';
 import 'package:flutter_facebook/screens/screens.dart';
 import 'package:flutter_facebook/screens/watch_screen.dart';
 import 'package:flutter_facebook/widgets/widgets.dart';
@@ -14,7 +15,7 @@ class _NavScreenState extends State<NavScreen> {
   final List<Widget> _screens = [
     HomeScreen(),
     WatchScreen(),
-    Scaffold(),
+    ProfileScreen(),
     Scaffold(),
     Scaffold(),
     Scaffold(),

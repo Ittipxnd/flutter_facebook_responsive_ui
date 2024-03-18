@@ -61,8 +61,6 @@ class CustomAppBar extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                UserCard(user: currentUser),
-                const SizedBox(width: 12.0),
                 CircleButton(
                   icon: Icons.search,
                   iconSize: 30.0,
@@ -73,6 +71,8 @@ class CustomAppBar extends StatelessWidget {
                   iconSize: 30.0,
                   onPressed: () => print('Messenger'),
                 ),
+                const SizedBox(width: 12.0),
+                ProfileAvatar(imageUrl: currentUser.imageUrl),
               ],
             ),
           ),
