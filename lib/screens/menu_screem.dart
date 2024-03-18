@@ -1,4 +1,6 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_facebook/data/data.dart';
 
 
 class MenuScreen extends StatelessWidget {
@@ -20,14 +22,14 @@ class MenuScreen extends StatelessWidget {
               SizedBox(width: 15.0),
               CircleAvatar(
                 radius: 25.0,
-                backgroundImage: AssetImage('assets/Mike Tyler.jpg'),
+                backgroundImage: CachedNetworkImageProvider(currentUser.imageUrl),
               ),
               SizedBox(width: 20.0),
               Column(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text('Mike Tyler',
+                  Text(currentUser.name,
                       style: TextStyle(
                           fontWeight: FontWeight.bold, fontSize: 18.0)),
                   SizedBox(height: 5.0),
