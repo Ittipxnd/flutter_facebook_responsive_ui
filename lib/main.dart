@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_facebook/config/palette.dart';
-import 'package:flutter_facebook/screens/screens.dart';
+import 'package:Flutter_Clone_App/config/palette.dart';
+import 'package:Flutter_Clone_App/screens/screens.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

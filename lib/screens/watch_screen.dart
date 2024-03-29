@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_facebook/config/palette.dart';
-import 'package:flutter_facebook/data/data.dart';
-import 'package:flutter_facebook/widgets/post_button.dart';
-import 'package:flutter_facebook/widgets/watch_bar.dart';
-import 'package:flutter_facebook/widgets/widgets.dart';
+import 'package:Flutter_Clone_App/config/palette.dart';
+import 'package:Flutter_Clone_App/data/data.dart';
+import 'package:Flutter_Clone_App/widgets/post_button.dart';
+import 'package:Flutter_Clone_App/widgets/watch_bar.dart';
+import 'package:Flutter_Clone_App/widgets/widgets.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_facebook/config/palette.dart';
-import 'package:flutter_facebook/data/data.dart';
-import 'package:flutter_facebook/models/models.dart';
-import 'package:flutter_facebook/widgets/widgets.dart';
+import 'package:Flutter_Clone_App/config/palette.dart';
+import 'package:Flutter_Clone_App/data/data.dart';
+import 'package:Flutter_Clone_App/models/models.dart';
+import 'package:Flutter_Clone_App/widgets/widgets.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class HomeScreen extends StatefulWidget {

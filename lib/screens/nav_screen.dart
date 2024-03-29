@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_facebook/data/data.dart';
-import 'package:flutter_facebook/screens/friend_screen.dart';
-import 'package:flutter_facebook/screens/menu_screem.dart';
-import 'package:flutter_facebook/screens/noti_screen.dart';
-import 'package:flutter_facebook/screens/profile_screen.dart';
-import 'package:flutter_facebook/screens/screens.dart';
-import 'package:flutter_facebook/screens/watch_screen.dart';
-import 'package:flutter_facebook/widgets/widgets.dart';
+import 'package:Flutter_Clone_App/data/data.dart';
+import 'package:Flutter_Clone_App/screens/friend_screen.dart';
+import 'package:Flutter_Clone_App/screens/menu_screem.dart';
+import 'package:Flutter_Clone_App/screens/noti_screen.dart';
+import 'package:Flutter_Clone_App/screens/profile_screen.dart';
+import 'package:Flutter_Clone_App/screens/screens.dart';
+import 'package:Flutter_Clone_App/screens/watch_screen.dart';
+import 'package:Flutter_Clone_App/widgets/widgets.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class NavScreen extends StatefulWidget {

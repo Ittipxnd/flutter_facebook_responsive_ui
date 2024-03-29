@@ -1,4 +1,4 @@
-import 'package:flutter_facebook/models/models.dart';
+import 'package:Flutter_Clone_App/models/models.dart';
 
 final User currentUser = User(
   name: 'Ittipat Wongkawin',

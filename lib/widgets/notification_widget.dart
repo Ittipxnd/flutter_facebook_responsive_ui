@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_facebook/models/notification_model.dart';
+import 'package:Flutter_Clone_App/models/notification_model.dart';
 
 class NotificationWidget extends StatelessWidget {
 

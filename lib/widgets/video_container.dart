@@ -1,8 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_facebook/config/palette.dart';
-import 'package:flutter_facebook/models/video_model.dart';
-import 'package:flutter_facebook/widgets/widgets.dart';
+import 'package:Flutter_Clone_App/config/palette.dart';
+import 'package:Flutter_Clone_App/models/video_model.dart';
+import 'package:Flutter_Clone_App/widgets/widgets.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 

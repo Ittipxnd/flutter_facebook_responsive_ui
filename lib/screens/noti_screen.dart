@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_facebook/widgets/notification_widget.dart';
-import 'package:flutter_facebook/models/notification_model.dart';
+import 'package:Flutter_Clone_App/widgets/notification_widget.dart';
+import 'package:Flutter_Clone_App/models/notification_model.dart';
 class NotificationsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
